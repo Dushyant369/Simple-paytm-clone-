@@ -6,7 +6,7 @@ import { SubHeading } from '../components/SubHeading';
 import { InputBox } from "../components/InputBox";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 
 export const Signin = () => {
   const [email, setEmail] = useState("");
