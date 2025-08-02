@@ -8,7 +8,7 @@ export const AppBar = ({ user }) => {
     <header className="shadow h-14 flex justify-between items-center px-4 bg-white">
       <div
         className="text-lg font-semibold cursor-pointer"
-        onClick={() => navigate("/signup")}
+        onClick={() => navigate("/")}
         role="button"
         tabIndex={0}
         onKeyDown={(e) => {
