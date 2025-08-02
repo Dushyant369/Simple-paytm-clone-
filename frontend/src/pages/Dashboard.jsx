@@ -3,7 +3,9 @@ import axios from "axios";
 import { Balance } from "../components/Balance";
 import { Users } from "../components/Users";
 import { AppBar } from "../components/AppBar";
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+// const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+const API_BASE_URL = "https://simple-paytm-anbu.onrender.com";
+
 
 
 
