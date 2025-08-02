@@ -13,7 +13,7 @@ export const AppBar = ({ user }) => {
         tabIndex={0}
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") {
-            navigate("/signup");
+            navigate("/");
           }
         }}
       >
