@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 export const UpdateProfile = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -38,7 +38,7 @@ export const UpdateProfile = () => {
       }
 
       const response = await axios.put(
-        `${REACT_APP_API_BASE_URL}/api/v1/user/update`,
+        `${API_BASE_URL}/api/v1/user/update`,
         updateData,
         {
           headers: { Authorization: "Bearer " + token },
