@@ -6,6 +6,7 @@ import { InputBox } from "../components/InputBox";
 import { Button } from "../components/Button";
 import axios from "axios";
 import { BottomWarning } from "../components/BottomWarning";
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 
 export const Signup = () => {
@@ -23,7 +24,7 @@ export const Signup = () => {
     setError("");
     setLoading(true);
     try {
-      const response = await axios.post(`simple-paytm-anbu.onrender.com/api/v1/user/`, {
+      const response = await axios.post(`${API_BASE_URL}/api/v1/user/`, {
         username,
         firstName,
         lastName,

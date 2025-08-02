@@ -2,14 +2,17 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Button } from "./Button";
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 
 export const Users = () => {
   const [users, setUsers] = useState([]);
   const [filter, setFilter] = useState("");
 
+
   useEffect(() => {
     axios
-      .get(`simple-paytm-anbu.onrender.com/api/v1/user/bulk`, { params: { filter } })
+      .get(`${API_BASE_URL}/api/v1/user/bulk`, { params: { filter } })
       .then((response) => {
         setUsers(response.data.user);
       })
