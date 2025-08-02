@@ -9,7 +9,7 @@ export const Users = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/v1/user/bulk", { params: { filter } })
+      .get(`${API_BASE_URL}/api/v1/user/bulk`, { params: { filter } })
       .then((response) => {
         setUsers(response.data.user);
       })
