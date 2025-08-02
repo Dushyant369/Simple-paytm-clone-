@@ -9,7 +9,7 @@ import { Dashboard } from "./pages/Dashboard";
 import { SendMoney } from "./pages/SendMoney";
 import { UpdateProfile } from "./pages/UpdateProfile";
 import './App.css'
-require('dotenv').config();
+
 
 function App() {
   return (
