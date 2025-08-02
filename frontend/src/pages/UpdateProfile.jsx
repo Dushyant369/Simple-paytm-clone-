@@ -38,7 +38,7 @@ export const UpdateProfile = () => {
       }
 
       const response = await axios.put(
-        "http://localhost:3000/api/v1/user/update",
+        `${REACT_APP_API_BASE_URL}/api/v1/user/update`,
         updateData,
         {
           headers: { Authorization: "Bearer " + token },

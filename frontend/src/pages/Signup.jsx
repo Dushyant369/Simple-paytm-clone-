@@ -22,7 +22,7 @@ export const Signup = () => {
     setError("");
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:3000/api/v1/user/signup", {
+      const response = await axios.post(`${REACT_APP_API_BASE_URL}/api/v1/user/signup`, {
         username,
         firstName,
         lastName,
