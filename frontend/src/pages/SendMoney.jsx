@@ -20,7 +20,7 @@ export const SendMoney = () => {
       setSuccess("");
       setLoading(true);
       const res = await axios.post(
-        `${API_BASE_URL}/api/v1/account/transfer`,
+        `simple-paytm-anbu.onrender.com/api/v1/account/transfer`,
         {
           to: id,
           amount: Number(amount),

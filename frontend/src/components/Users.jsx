@@ -9,7 +9,7 @@ export const Users = () => {
 
   useEffect(() => {
     axios
-      .get(`${API_BASE_URL}/api/v1/user/bulk`, { params: { filter } })
+      .get(`simple-paytm-anbu.onrender.com/api/v1/user/bulk`, { params: { filter } })
       .then((response) => {
         setUsers(response.data.user);
       })

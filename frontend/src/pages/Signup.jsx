@@ -23,7 +23,7 @@ export const Signup = () => {
     setError("");
     setLoading(true);
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/v1/user/signup`, {
+      const response = await axios.post(`simple-paytm-anbu.onrender.com/api/v1/user/signup`, {
         username,
         firstName,
         lastName,

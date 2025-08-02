@@ -3,7 +3,7 @@ import axios from "axios";
 import { Balance } from "../components/Balance";
 import { Users } from "../components/Users";
 import { AppBar } from "../components/AppBar";
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 
 
 export const Dashboard = () => {
@@ -35,7 +35,7 @@ export const Dashboard = () => {
           return;
         }
 
-        const response = await axios.get(`${API_BASE_URL}/api/v1/account/balance`, {
+        const response = await axios.get(`simple-paytm-anbu.onrender.com//api/v1/account/balance`, {
           headers: {
             Authorization: "Bearer " + token,
           },
